@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Workshop #HTML - Form</title>
+        <title>CSS</title>
         <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                color: brown;
+            }
+            
+            body {
+                background-color: rgb(246, 212, 169);
+                color: brown;
+            }
+            
+        </style>
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
-        <h1>Workshop #HTML - Form</h1>
-        <table>
-            <form>
+        <div class="headBox-1">
+            <h1>Workshop #HTML - Form</h1>
+        </div>
+        <form>
+            <table>
                 <tr>
                     <td><label for="fname">ชื่อ</label></td>
                     <td><input type="text" id="fname"FirstName="fname"></td>
                 </tr>
                 <tr>
+                    
                     <td><label for="lname">นามสกุล </label></td>
                     <td><input type="text" id="lname"LastName="lname"></td>
                 </tr>
                 <tr>
+                    
                     <td><label for="bday">วัน/เดือน/ปีเกิด </label></td>
                     <td><input type="date" id="bday"BirthDay="bday"></td>
                 </tr>
                 <tr>
+                    
                     <td><label for="old">อายุ </label></td>
                     <td><input type="number"id="old"tOld="old"></td>
                 </tr>
                 <tr>
+                    
                     <td><label for="gender">เพศ </label></td>
                     <td>
                         <input type="radio" id="gender" name="male" value="Gender">
                         <label for="gender">ชาย</label>
                         <input type="radio" id="gender" name="male" value="Gender">
-                        <label for="gender">หญิง</label>
+                        <label for="gender">หญิง</label><br>
                     </td>
                 </tr>
                 <tr>
@@ -39,17 +60,17 @@
                 </tr>
                 <tr>
                     <td><label for="adress">ที่อยู่ </label></td>
-                    <td><textarea rows="6" cols="25"></textarea></td>
+                    <td><textarea type="textarea" rows="6" cols="25"></textarea></td>
                 </tr>
                 <tr>
                     <td><label for="fav">สีที่ชอบ </label></td>
                     <td>
-                        <select name="favC" id="favC" size="1">
-                            <option value="red">สีแดง</option>
-                            <option value="green">สีเขียว</option>
-                            <option value="blue">สีน้ำเงิน</option>
-                            <option value="black">สีดำ</option>
-                            <option value="white">สีขาว</option>
+                        <select type="select" name="favC" id="favC" size="1">
+                            <option type="optionRed" value="red">สีแดง</option>
+                            <option type="optionGreen" value="green">สีเขียว</option>
+                            <option type="optionBlue" value="blue">สีน้ำเงิน</option>
+                            <option type="optionBlack" value="black">สีดำ</option>
+                            <option type="optionWhite" value="white">สีขาว</option>
                         </select>
                     </td>
                 </tr>
@@ -61,7 +82,7 @@
                         <input type="radio" name="favs" id="country" value="Music">
                         <label for="music">ลูกทุ่ง </label>
                         <input type="radio" name="favs" id="other" value="Music">
-                        <label for="music">อื่น ๆ </label>
+                        <label for="music">อื่น ๆ</label>
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +96,7 @@
                     <td><br><br><input type="reset" value="Reset"></td>
                     <td><br><br><input type="submit" value="Submit"></td>
                 </tr>
-            </form>
-        </table>
+            </table>
+        </form>    
     </body>
 </html>
