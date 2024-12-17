@@ -1,101 +1,10 @@
 h1 {
-    font-family: "Itim";
+    font-family: "Kanit";
     font-size: 40pt;
 }
 
 table {
-    font-family: "Itim";
+    font-family: "Kanit";
     display: flex;
     justify-content: center;
-}
-
-label {
-    font-size: 16pt;
-}
-
-div.headBox-1 {
-    border: 4px solid brown;
-    border-radius: 2em;
-    margin-bottom: 10px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto; 
-    margin-right: auto;
-    background-image: url(https://media.tenor.com/woeasjYR7JMAAAAi/bubu-bubbu.gif), url(https://media.tenor.com/woeasjYR7JMAAAAi/bubu-bubbu.gif);
-    background-repeat: no-repeat;
-    background-size: 12%;
-    background-position: left, right;
-}
-
-div:hover{
-    background-color: rgb(250, 173, 72);
-}
-
-input[type="text"]:hover{
-    background-color: rgb(250, 173, 72);
-    color: brown;
-}
-
-input[type="submit"]:hover{
-    background-color: yellowgreen;
-    outline: none;
-    border: 3px solid brown;
-}
-
-input[type="reset"]:hover{
-    background-color: red;
-    outline: none;
-    border: 3px solid blue;
-}
-
-input[type="date"]:hover{
-    background-color: rgb(250, 173, 72);
-    color: brown;
-}
-
-input[type="number"]:hover{
-    background-color: rgb(250, 173, 72);
-    color: brown;
-}
-
-textarea:hover{
-    background-color: rgb(250, 173, 72);
-    color: brown;
-}
-
-input[type="radio"]:hover {
-    outline: 3px solid brown;
-    cursor: pointer;
-}
-
-input[type="checkbox"]:hover{
-    outline: 3px solid brown;
-    cursor: pointer;
-}
-
-select[type="select"]:hover{
-    background-color: rgb(250, 173, 72);
-}
-
-input:focus{
-    outline: none;
-    border: 3px solid brown;
-}
-
-textarea:focus{
-    outline: none;
-    border: 3px solid brown;
-}
-
-select[type="select"]:focus{
-    outline: none;
-    border: 3px solid brown;
-}
-
-body{
-    background-image: url(https://cdn.pixabay.com/photo/2023/07/08/13/20/drink-8114520_1280.png), url(https://cdn.pixabay.com/photo/2023/07/08/13/20/drink-8114520_1280.png);
-    background-repeat: no-repeat;
-    background-position: left, right;
-    background-size: 35%;
 }
