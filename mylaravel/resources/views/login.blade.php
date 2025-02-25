@@ -12,17 +12,22 @@
                 </div>
                 <div class="card-body login-card-body">
                     <p class="login-box-msg">Sign in to start your session</p>
-                    <form action="../index3.html" method="post">
+                    <?php
+                        $error = session()->get('error');
+                        echo "<h3 class='text-danger'>".$error."</h3>";
+                    ?>
+                    <form action="{{ url('/login') }}" method="post">
+                        @csrf
                         <div class="input-group mb-1">
                             <div class="form-floating">
-                                <input id="loginEmail" type="email" class="form-control" value="" placeholder="" />
+                                <input name="email" id="loginEmail" type="email" class="form-control" value="" placeholder="" />
                                 <label for="loginEmail">Email</label>
                             </div>
                             <div class="input-group-text"><span class="bi bi-envelope"></span></div>
                         </div>
                         <div class="input-group mb-1">
                             <div class="form-floating">
-                                <input id="loginPassword" type="password" class="form-control" placeholder="" />
+                                <input name="password" id="loginPassword" type="password" class="form-control" placeholder="" />
                                 <label for="loginPassword">Password</label>
                             </div>
                             <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
